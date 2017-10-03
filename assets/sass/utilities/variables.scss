@@ -1,0 +1,34 @@
+/**
+ *
+ *   Typography
+ *     1. Importe fonts from google fonts
+ *     2. Define the fonts family
+ *     3. Define the font weights
+ *
+ **/
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i';
+@import 'https://fonts.googleapis.com/css?family=Oswald:300,400,700';
+$font-family: 'Open Sans', sans-serif;
+$font-family-title: 'Oswald', sans-serif;
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-extrabold: 800;
+/**
+ *
+ *   Colors
+ *     1. Define colors for the aplication
+ *
+ **/
+$mosque: #046576;
+$elm: #1b8186;
+$envy: #86a697;
+$green-mist: #d6d3b0;
+$white: #ffffff;
+$black: #000000;
+$grey: #808080;
+$background: hsl(255, 255, 255);
+
+/* responsive screens max */
+$break-small: 1366px;

@@ -1,0 +1,35 @@
+{
+  "name": "Worklift",
+  "version": "1.0.0",
+  "description": "Worklift - Accélerez votre innovation",
+  "main": "server.js",
+  "scripts": {
+    "sass:compile": "./node_modules/.bin/gulp sass",
+    "scripts:compile": "./node_modules/.bin/gulp scripts:vendor scripts:modules",
+    "watch": "./node_modules/.bin/gulp watch",
+    "prestart": "npm run sass:compile && npm run scripts:compile",
+    "start": "node server.js & npm run watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0",
+    "jquery": "^3.2.1",
+    "morgan": "^1.7.0",
+    "nodemailer": "^2.7.0"
+  },
+  "devDependencies": {
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.9.1",
+    "gulp-uglify": "^2.0.0",
+    "node-sass": "^3.13.0",
+    "pump": "^1.0.1"
+  },
+  "optionalDependencies": {}
+}

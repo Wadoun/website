@@ -1,0 +1,72 @@
+<div class="icons-global swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide icon">
+            <div class="icon-img">
+                <img src="/images/icon1.svg" class="icon-a" alt="Une communauté internationale" />
+            </div>
+            <p class="icon-text"> Une communauté <br/>internationale</p>
+        </div>
+        <div class="swiper-slide icon">
+            <div class="icon-img">
+                <img src="/images/icon2.svg" class="icon-b" alt="Une solution de bureau flexible adaptée à vos besoins" />
+            </div>
+            <p class="icon-text">Une solution de<br/> bureau flexible adaptée<br/> à vos besoins</p>
+        </div>
+        <div class="swiper-slide icon">
+            <div class="icon-img">
+                <img src="/images/icon3.svg" class="icon-c" alt="Des experts et mentors pour vous accompagner" />
+            </div>
+            <p class="icon-text"> Des experts et <br/>mentors pour vous<br/> accompagner</p>
+        </div>
+        <div class="swiper-slide icon">
+            <div class="icon-img">
+                <img src="/images/icon4.svg" class="icon-d" alt=" Un Fab Lab pour tous vos projets tech" />
+            </div>
+            <p class="icon-text"> Un Fab Lab pour <br/>tous vos projets tech</p>
+        </div>
+        <div class="swiper-slide icon">
+            <div class="icon-img">
+                <img src="/images/icon5.svg" class="icon-e" alt="Une plateforme d'accompagnement au développement de votre projet" />
+            </div>
+            <p class="icon-text"> Une plateforme<br/> d'accompagnement au <br/>développement de<br/> votre projet</p>
+        </div>
+    </div>    
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>            
+</div>
+
+<script>
+    var mySwiper = undefined;
+    function swiperMobil () {
+        
+        var screenWidth = $(window).width();
+
+        if(screenWidth < 768 && mySwiper == undefined) {   
+            $('.swiper-container').each(function(){
+                mySwiper = new Swiper(this, {            
+                    scrollbar: $(this).find('.swiper-scrollbar')[0],
+                    slidesPerView: 'auto',            
+                    effect: 'slide',
+                    paginationClickable: true,
+                    spaceBetween: 0,
+                    freeMode: true
+                })
+            });        
+        }
+        else if ( screenWidth > 768 && mySwiper != undefined){
+            $('.swiper-container').each(function(){
+                mySwiper.destroy();
+                mySwiper = undefined;
+                console.log("destroy");
+                $('.swiper-wrapper').removeAttr('style');
+                $('.swiper-slide').removeAttr('style');     
+            });
+        }
+
+    }
+    swiperMobil();
+    $(window).on('resize', function(){
+        swiperMobil();
+  });
+
+</script>

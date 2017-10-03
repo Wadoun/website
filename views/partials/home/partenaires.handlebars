@@ -1,0 +1,44 @@
+<div class="partenaires-global swiper-container">
+	<h2 class="titleG">Partenaires</h2>
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="/images/google.png" class="partenaire-a" alt="Google" /></div>
+        <div class="swiper-slide"><img src="/images/aws.png" class="partenaire-b" alt="AWS" /></div>
+        <div class="swiper-slide"><img src="/images/dapulse.png" class="partenaire-c" alt="Dapulse" /></div>
+        <div class="swiper-slide"><img src="/images/mailchimp.png" class="partenaire-d" alt="Mail Chimp" /></div>
+    </div>
+</div>
+
+<script>
+    var mySwiper = undefined;
+    function swiperMobil () {
+        
+        var screenWidth = $(window).width();
+
+        if(screenWidth < 768 && mySwiper == undefined) {   
+            $('.swiper-container').each(function(){
+                mySwiper = new Swiper(this, {            
+                    scrollbar: $(this).find('.swiper-scrollbar')[0],
+                    slidesPerView: 'auto',            
+                    effect: 'slide',                    
+                    spaceBetween: 0,
+                    loop: true
+                })
+            });        
+        }
+        else if ( screenWidth > 768 && mySwiper != undefined){
+            $('.swiper-container').each(function(){
+                mySwiper.destroy();
+                mySwiper = undefined;
+                console.log("destroy");
+                $('.swiper-wrapper').removeAttr('style');
+                $('.swiper-slide').removeAttr('style');     
+            });
+        }
+
+    }
+    swiperMobil();
+    $(window).on('resize', function(){
+        swiperMobil();
+  });
+
+</script>

@@ -1,0 +1,15 @@
+.icon {
+  display: block;
+
+  &.icon-light {
+    background-image: url('/images/light-bulb.png');
+    width: 163px;
+    height: 200px;
+  }
+
+  &.icon-browser {
+    background-image: url('/images/browser.png');
+    width: 200px;
+    height: 200px;
+  }
+}

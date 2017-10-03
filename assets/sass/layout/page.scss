@@ -1,0 +1,176 @@
+.page {
+  position: relative;
+  width: 100%;
+  z-index: 5;
+  height: 100%;
+  .ms-left, .ms-right {
+    z-index: 2;
+  }
+  .project-selected {
+    font: {
+      family: $font-family-title;
+      size: 32px;
+      weight: $font-weight-light;
+    }
+    cursor: pointer;
+    color: $white;
+    text-transform: uppercase;      
+    border: 1px solid $white;
+    position: relative;
+    padding: 10px 50px 10px 20px;
+
+    &:after{
+      background: url("/images/plus.png") no-repeat 98% 50%;
+      content:'';
+      position: absolute;
+      right: 16px;
+      top: 11px;
+      width: 31px;
+      height: 31px;     
+    }
+    &:hover{
+      &:after {
+        animation: 1s rotate forwards; 
+      }
+    }
+  }
+  .none{
+    display: none;
+  }
+  .container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    #page-down-arrow {
+      width: 52px;
+      height: 52px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      background: url('/images/down-arrow.png') no-repeat;
+      bottom: 30px;
+      display: block;
+      cursor: pointer;
+      z-index: 3;
+    }
+    #page-down-arrow-second {
+      width: 52px;
+      height: 52px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      z-index: 3;
+      background: url('/images/right-arrow.png') no-repeat;
+      background-position: 12px 20px;
+      bottom: 30px;
+      display: block;
+      cursor: pointer;
+    }
+    #page-down-text {
+      width: 100px;
+      height: 62px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      bottom: 30px;
+      cursor: pointer;
+      color: $mosque;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+
+      i {
+        background: url('/images/right-arrow.png') no-repeat;
+        height: 15px;
+        width: 11px;
+      }
+    }
+  }
+  .lines {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    span {
+      background: $white;
+      position: absolute;
+
+      &.line1 {
+        height: 1px;
+        width: 700px;
+        top: -45px;
+        right: -350px;
+      }
+
+      &.line2 {
+        height: 1px;
+        width: 625px;
+        top: 253px;
+        right: 149px;
+        @media screen and (max-width: $break-small) {
+          right: 12px;
+          top: 183px;
+          width: 635px;
+        }
+      }
+
+      &.line3 {
+        height: 1px;
+        width: 859px;
+        bottom: -25px;
+        right: -350px;
+      }
+
+      &.line4 {
+        height: 1px;
+        width: 578px;
+        bottom: 269px;
+        right: 303px;
+        @media screen and (max-width: $break-small) {
+          bottom: 200px;
+        }
+      }
+
+      &.line5 {
+        width: 1px;
+        height: 10000px;
+        right: -50px;
+        bottom: -500px;
+        overflow: visible;
+      }
+
+      &.line6 {
+        width: 1px;
+        height: 44px;
+        top: -45px;
+        right: 0;
+        left: 0;
+        margin: auto;
+      }
+
+      &.line7 {
+        width: 1px;
+        height: 42px;
+        bottom: -43px;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+      }
+
+      &.ellipse {
+        background: url('/images/ellipse.png');
+        width: 7px;
+        height: 7px;
+        bottom: -50px;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+      }
+    }
+  }  
+}

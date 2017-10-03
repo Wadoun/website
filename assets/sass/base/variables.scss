@@ -1,0 +1,30 @@
+/* fonts Hurme Geometric */
+@import url("//hello.myfonts.net/count/34bae8");  
+@font-face {font-family: 'HurmeGeometricSans1-Bold';src: url('/fonts/34BAE8_0_0.eot');src: url('/fonts/34BAE8_0_0.eot?#iefix') format('embedded-opentype'),url('/fonts/34BAE8_0_0.woff2') format('woff2'),url('/fonts/34BAE8_0_0.woff') format('woff'),url('/fonts/34BAE8_0_0.ttf') format('truetype');}
+@font-face {font-family: 'HurmeGeometricSans2-Bold';src: url('/fonts/34BAE8_1_0.eot');src: url('/fonts/34BAE8_1_0.eot?#iefix') format('embedded-opentype'),url('/fonts/34BAE8_1_0.woff2') format('woff2'),url('/fonts/34BAE8_1_0.woff') format('woff'),url('/fonts/34BAE8_1_0.ttf') format('truetype');}
+@font-face {font-family: 'HurmeGeometricSans1-Light';src: url('/fonts/34BAE8_2_0.eot');src: url('/fonts/34BAE8_2_0.eot?#iefix') format('embedded-opentype'),url('/fonts/34BAE8_2_0.woff2') format('woff2'),url('/fonts/34BAE8_2_0.woff') format('woff'),url('/fonts/34BAE8_2_0.ttf') format('truetype');}
+@font-face {font-family: 'HurmeGeometricSans2-Light';src: url('/fonts/34BAE8_3_0.eot');src: url('/fonts/34BAE8_3_0.eot?#iefix') format('embedded-opentype'),url('/fonts/34BAE8_3_0.woff2') format('woff2'),url('/fonts/34BAE8_3_0.woff') format('woff'),url('/fonts/34BAE8_3_0.ttf') format('truetype');}
+@font-face {font-family: 'HurmeGeometricSans1-Regular';src: url('/fonts/34BAE8_4_0.eot');src: url('/fonts/34BAE8_4_0.eot?#iefix') format('embedded-opentype'),url('/fonts/34BAE8_4_0.woff2') format('woff2'),url('/fonts/34BAE8_4_0.woff') format('woff'),url('/fonts/34BAE8_4_0.ttf') format('truetype');}
+@font-face {font-family: 'HurmeGeometricSans2-Regular';src: url('/fonts/34BAE8_5_0.eot');src: url('/fonts/34BAE8_5_0.eot?#iefix') format('embedded-opentype'),url('/fonts/34BAE8_5_0.woff2') format('woff2'),url('/fonts/34BAE8_5_0.woff') format('woff'),url('/fonts/34BAE8_5_0.ttf') format('truetype');}
+ 
+
+$ff : 'HurmeGeometricSans1-Light', sans-serif;
+$ffr : 'HurmeGeometricSans1-Regular', sans-serif;
+$ffb : 'HurmeGeometricSans1-Bold', sans-serif;
+$fsize : 16px;
+$blue : #3d8a91;
+$grey : #282a2e;
+$greylight : #f6f6f6;
+$white : #fff;
+$normal : normal;
+$bold : bold;
+$light: lighter;
+$ftitle: 48px;
+$fsubtitle: 28px;
+$ftitleM: 24px; 
+$fsubtitleM: 18px;
+$fbutton: 16px;
+$phone: only screen and (max-width : 767px);
+$tabletPaysage : screen and (min-width: 768px) and (max-width: 1023px);
+$desktop : screen and (min-width: 1023px);
+$desktopLarge : screen and (min-width: 1280px);

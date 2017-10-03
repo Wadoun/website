@@ -1,0 +1,258 @@
+.min-opacity {
+  opacity: 0;
+}
+
+.max-opacity {
+  opacity: 1;
+}
+
+.fade-in {
+  -webkit-animation-name: fade-in;
+  animation-name: fade-in;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.fade-out {
+  -webkit-animation-name: fade-out;
+  animation-name: fade-out;
+  animation-duration: 0.5s;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards;
+}
+
+.fade-in-right {
+  -webkit-animation-name: fade-in-right;
+  animation-name: fade-in-right;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.fade-in-left {
+  -webkit-animation-name: fade-in-left;
+  animation-name: fade-in-left;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.fade-in-hero-logo {
+  -webkit-animation-name: fade-in-hero-logo;
+  animation-name: fade-in-hero-logo;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.animation-line-left-1 {
+  -webkit-animation-name: animation-line-left;
+  animation-name: animation-line-left;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  background: $mosque;
+  height: 1px;
+  top: -60px;
+  position: absolute;
+  left: -150px;
+  display: block;
+}
+
+.animation-line-left-2 {
+  -webkit-animation-name: animation-line-left;
+  animation-name: animation-line-left;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  background: $mosque;
+  height: 1px;
+  top: -35px;
+  animation-delay: 0.3s;
+  position: absolute;
+  left: -278px;
+  display: block;
+}
+
+.animation-line-left-3 {
+  -webkit-animation-name: animation-line-left;
+  animation-name: animation-line-left;
+  animation-duration: 0.5s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  background: $mosque;
+  height: 1px;
+  position: absolute;
+  left: -360px;
+  bottom: -330px;
+  display: block;
+}
+
+.animation-line-left-4 {
+  -webkit-animation-name: animation-line-left;
+  animation-name: animation-line-left;
+  animation-duration: 0.5s;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards;
+  background: $mosque;
+  height: 1px;
+  position: absolute;
+  left: -278px;
+  bottom: -355px;
+  display: block;
+}
+
+.animation-line-bottom-1 {
+  -webkit-animation-name: animation-line-bottom-350;
+  animation-name: animation-line-bottom-350;
+  animation-duration: 0.5s;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards;
+  background: $mosque;
+  width: 1px;
+  position: absolute;
+  left: 0;
+  top: -141px;
+  display: block;
+}
+
+.animation-line-bottom-2 {
+  -webkit-animation-name: animation-line-bottom-500;
+  animation-name: animation-line-bottom-500;
+  animation-duration: 0.5s;
+  animation-delay: 0.7s;
+  animation-fill-mode: forwards;
+  background: $mosque;
+  width: 1px;
+  position: absolute;
+  right: -340px;
+  bottom: -700px;
+  display: block;
+}
+
+.bounce {
+  -webkit-animation: bounce 0.8s infinite;
+  animation: bounce 0.8s infinite;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.important-text-white {
+  background-color: $white;
+  color: $mosque;
+  padding: 5px 10px;
+  display: inline-table;
+  &.caci {
+    color: #0f7986;    
+  }
+}
+
+.important-text-mosque {
+  background-color: $mosque;
+  color: $white;
+  padding: 5px 10px;
+  display: inline-table;
+
+}
+
+.important-text-green-mist {
+  background-color: #d6d3b0;
+  color: $white;
+  padding: 5px 10px;
+  display: inline-table;
+  &.caci {
+    background: #0f7986;    
+  }
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.align-start {
+  align-items: align-start;
+}
+
+.background-mosque {
+  background: $mosque;
+}
+
+.space-to-left {
+  padding-left: 10px;
+  padding-right: 0;
+}
+
+.space-to-right {
+  padding-right: 10px;
+  padding-left: 0;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.line-through-text {
+  text-decoration: line-through;
+}
+
+.move-line-one {
+  animation-name: move-line-one;
+  animation-duration: 0.4s;
+}
+
+.move-line-two {
+  animation-name: move-line-two;
+  animation-duration: 0.4s;
+}
+
+.move-line-three {
+  animation-name: move-line-three;
+  animation-duration: 0.4s;
+}
+
+.move-line-four {
+  animation-name: move-line-four;
+  animation-duration: 0.4s;
+}
+
+.move-line-five {
+  animation-name: move-line-five;
+  animation-duration: 0.4s;
+}
+.move-line-six {
+  animation-name: move-line-six;
+  animation-duration: 0.4s;
+}
+.move-line-seven {
+  animation-name: move-line-seven;
+  animation-duration: 0.4s;
+}

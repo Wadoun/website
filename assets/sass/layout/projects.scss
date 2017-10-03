@@ -1,0 +1,152 @@
+.project-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+
+  .project-selector-container {
+    position: absolute;
+    top: 303px;
+    left: 75px;
+
+    .project-selected {
+      font: {
+        family: $font-family-title;
+        size: 32px;
+        weight: $font-weight-light;
+      }
+      cursor: pointer;
+      color: $white;
+      text-transform: uppercase;      
+      border: 1px solid $white;
+      position: relative;
+      padding: 10px 50px 10px 20px;
+
+      &:after{
+        background: url("/images/plus.png") no-repeat 98% 50%;
+        content:'';
+        position: absolute;
+        right: 16px;
+        top: 11px;
+        width: 31px;
+        height: 31px;     
+      }
+      &:hover{
+        &:after {
+          animation: 1s rotate forwards; 
+        }
+      }
+    }
+
+    .project-selector {
+      font: {
+        family: $font-family-title;
+        size: 20px;
+        weight: $font-weight-light;
+      }
+      color: $white;
+      text-transform: uppercase;
+      border: 1px solid $white;
+
+      li {
+        padding: 10px 50px 10px 20px;
+        cursor: pointer;
+        family: $font-family-title;
+        size: 20px;
+        weight: $font-weight-light;
+        text-transform: initial;        
+        &:hover {
+          background: $white;
+          color: $mosque;
+        }
+      }
+    }
+  }
+
+  .project-image {
+    width: 600px;
+    height: 300px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;    
+    position: relative;
+    left: 0;    
+    right: 0;
+    margin: 0 auto;
+    margin-top: 50vh;
+    transform: translateY(-50%);
+  }
+
+  .project-image-bg {
+    width: 600px;
+    z-index: 3;
+    position: absolute;
+    border: 1px solid #fff;
+    height: 300px;
+  }
+  .project-description {
+    font: {
+      family: $font-family-title;
+      size: 30px;
+      weight: $font-weight-light;
+    }
+    @media screen and (max-width: $break-small) {
+      bottom:45px;
+    }    
+    letter-spacing: 2px;
+    line-height: 1.2;
+    color: white;
+    position: absolute;
+    right: 55px;
+    left: 0;
+    bottom: 150px;
+    margin: 0 auto;
+    width: 700px;
+    text-align: right;
+  }
+
+  .project-feedback {
+    font: {
+      family: $font-family-title;
+      weight: $font-weight-light;
+    }
+    color: $white;
+    position: absolute;
+    right: 17px;
+    top: 305px;
+    width: 450px;
+    text-align: justify;
+
+    @media screen and (max-width: $break-small) {
+      right: 16px;
+      top: 192px;
+      width: 300px;
+    }
+    p {
+      font: {
+        size: 24px;
+      }
+      margin: 0 0 15px;
+      letter-spacing: 2px;
+      line-height: 1.2;
+
+      &:after,
+      &:before {
+        content: '';
+      }
+
+      &:after {
+        content: '»';
+      }
+
+      &:before {
+        content: '«';
+      }
+    }
+
+    span {
+      display: block;
+      font: {
+        size: 18px;
+      }
+    }
+  }
+}

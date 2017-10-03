@@ -1,0 +1,301 @@
+.icons-global {
+	width: 100%;	
+	display: table;
+	@media #{$phone} {
+		display: block;
+		height: 200px;
+	}
+
+	.swiper-wrapper {
+		width: 100%;
+	    height: 280px;
+	    display: table;
+	    @media #{$phone} {
+	    	height: 100%;
+	    	display: flex;
+	    	line-height: 200px;
+	    }
+	}
+	.swiper-button-next, .swiper-button-prev{
+		display: none;
+		@media #{$phone} { 
+			display: block;
+			background: #blue;
+		}
+	}
+	.icon {
+		width: 20%;		
+		text-align: center;
+		display: table-cell;
+		vertical-align: middle;
+
+		@media #{$phone} { 
+			display: inline-block;		   
+		    line-height: initial;
+		    vertical-align: middle;
+		    height: 200px;
+		    width: 100%;
+		}
+
+		.icon-img {			
+			display: block;
+			margin: 0 auto;
+			height: 70px;
+
+			@media #{$phone} {
+				margin: 13% auto 0 auto;
+			}
+			.icon-a {
+				width: 50px;				
+			}
+			.icon-b {
+				width: 50px;				
+			}		
+			.icon-c {
+				width: 50px;				
+			}				
+			.icon-d {
+				width: 50px;				
+			}
+			.icon-e{
+				width: 50px;
+			}
+		}
+		.icon-text {
+			color: $grey;
+			font-weight: $light;	
+			font-size: 16px;			
+			display: block;
+		}
+	}
+}
+.steps-global {
+	width: 100%;
+	display: table;
+	.step {
+		width: 33%;
+		height: 300px;
+		text-align: center;		
+		display: table-cell;
+		@media #{$desktopLarge} {
+			height: 350px;
+		}
+		@media #{$phone} { 
+			width: 100%;
+			display: block;
+		}
+		&.step-a {
+			background-image: url('/images/communaute.png');
+		}
+		&.step-b {
+			background-image: url('/images/coworking.png');
+		}
+		&.step-c {
+			background-image: url('/images/fablab.png');
+		}		
+		.buttonW {
+			position: relative;
+   			top: 140px;
+   			font-family: $ffr;
+   			font-size:16px;
+
+   			@media #{$phone} {
+   				top:170px;
+   			}
+   			@media #{$desktopLarge} {
+   				top: 180px;
+   			}
+		}
+		.step-text{
+			color: $white;
+			margin: 10% 0 0 0;
+			font-size:$fsize; 
+			font-family: $ffb; 
+			text-transform: uppercase;
+
+			@media #{$phone} { 
+				margin:0;
+				position: relative;
+    			top: 40px;
+			}
+		}		
+	}
+}
+.expert-global {
+	width: 100%;
+	height: 280px;
+	text-align: center;
+	display: block;
+
+	@media #{$phone} { 
+		display: none;
+	}	
+	.titleG {
+		margin: 5% 0 0 0;
+		@media #{$desktopLarge} {
+			margin: 3% 0 2% 0;
+		}
+	}
+	.expert {
+		width: 11%;	
+		margin: 5% 0 0 0;	
+		text-align: center;
+		display: inline-block;
+		vertical-align: middle;
+		@media #{$desktopLarge} {
+			margin: 2% 0 0 0;
+		}		
+		.expert-img {			
+			display: block;
+			margin: 0 auto;
+			height: 60px;
+			width: 60px;
+			background: $blue;
+			border-radius: 50px;
+
+			.expert-a {
+			    width: 30px;
+			    margin: 15px 0 0 0;
+			}
+			.expert-b {
+			    width: 30px;
+			    margin: 15px 0 0 0;
+			}		
+			.expert-c {
+			    width: 30px;
+			    margin: 15px 0 0 0;
+			}				
+			.expert-d {
+			    width: 30px;
+			    margin: 15px 0 0 0;
+			}
+			.expert-e{
+			    width: 30px;
+			    margin: 15px 0 0 0;
+			}
+			.expert-f{
+			    width: 30px;
+			    margin: 15px 0 0 0;
+			}
+			.expert-g{
+			    width: 30px;
+			    margin: 15px 0 0 0;
+			}
+			.expert-h{
+			    width: 30px;
+			    margin: 15px 0 0 0;
+			}									
+		}
+		.expert-text {
+			color: $grey;
+			font-weight: $light;	
+			font-size: 16px;			
+			margin: 5% 0 0 0;
+			display: block;
+		}
+	}
+}
+.intro-container {
+	.subtitleW{
+		margin:1% 0;
+	}
+}
+.mentors-global {
+	width: 100%;
+	height: 280px;
+	text-align: center;
+	display: table;
+	background: $blue; 
+
+	.mentor {
+	    width: 90%;
+	    margin: 0 auto;
+	}
+	.titleW {
+		margin: 4% 0 2% 0;
+
+		@media #{$phone} {
+			margin:10% 0 5% 0;
+		}
+
+		@media #{$desktopLarge} {
+			margin:3% 0 2% 0;
+		}		
+	}
+	.subtitleW {
+		width: 100%;
+		margin:0 auto;
+
+		@media #{$desktopLarge} {
+			width: 50%;
+		}
+	}
+}
+.partenaires-global {
+	display: block;
+	width: 100%;	
+	text-align: center;	
+	background: $white;
+	height: 260px;
+	
+    .titleG{
+    	margin: 2% 0;
+    }
+	.swiper-slide {
+		width: 12%;
+		height: 100px;
+		margin: 0 auto;
+		text-align: center;
+
+		 @media #{$phone} {
+		 	width: 100%;
+		 	height: 150px;
+		 }
+		img {
+			width: 90%;
+			display: inline-block;
+			vertical-align: middle;
+			 @media #{$phone} {
+			 	width: 50%;
+			 	margin: 0 auto;
+			 }
+		}
+	} 
+
+}
+.abonnements-global {
+	width: 100%;
+	height: 350px;
+	text-align: center;
+	display: table;
+	background: $greylight;
+	@media #{$phone} {
+		height: 280px;
+	}
+	@media #{$desktopLarge} {
+		height: 300px;
+	}
+	.abonnements {
+		display: table-cell;
+		vertical-align: middle;
+		@media #{$desktopLarge} {
+			vertical-align: top;
+		}
+	}
+	.titleG {
+		margin: 2% 0;
+		@media #{$desktopLarge} {
+			margin:2.5% 0 1% 0;
+		}
+	}
+	.subtitleW {
+		width: 50%;
+		margin:0 auto;
+	}	
+	.buttonB{
+		margin: 5% 0 0 0;
+		@media #{$desktopLarge} {
+			margin: 2% 0 0 0;
+		}
+	}
+}

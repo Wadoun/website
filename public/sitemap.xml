@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>http://worklift.com/</loc>
+    <lastmod>2017-09-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>http://worklift.com/commnaute</loc>
+    <lastmod>2017-09-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>http://worklift.com/coworking</loc>
+    <lastmod>2017-09-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>  
+</urlset>
+<url>
+<loc>http://worklift.com/coworking/paris</loc>
+<lastmod>2017-09-28</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+<url>
+<loc>http://worklift.com/coworking/barcelone</loc>
+<lastmod>2017-09-28</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+<url>
+<loc>http://worklift.com/fab-lab</loc>
+<lastmod>2017-09-28</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+<url>
+<loc>http://worklift.com/abonnements</loc>
+<lastmod>2017-09-28</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>
+<url>
+<loc>http://worklift.com/mission</loc>
+<lastmod>2017-09-28</lastmod>
+<changefreq>daily</changefreq>
+<priority>1</priority>
+</url>

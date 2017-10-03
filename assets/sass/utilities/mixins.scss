@@ -1,0 +1,92 @@
+/**
+ *
+ *   Typography
+ *     1. Create mixins for font sizes
+ *     2. Create mixins for special font weights
+ *
+ **/
+@mixin font-size-small {
+  font-size: 12px;
+};
+@mixin font-size-x-small {
+  font-size: 14px;
+};
+@mixin font-size-regular {
+  font-size: 16px;
+};
+@mixin font-size-large {
+  font-size: 24px;
+};
+@mixin font-size-x-large {
+  font-size: 32px;
+};
+@mixin font-size-xx-large {
+  font-size: 40px;
+};
+@mixin font-weight-light-italic {
+  font-weight: $font-weight-light;
+  font-style: italic;
+};
+@mixin font-weight-regular-italic {
+  font-weight: $font-weight-regular;
+  font-style: italic;
+};
+@mixin font-weight-semibold-italic {
+  font-weight: $font-weight-semibold;
+  font-style: italic;
+};
+@mixin font-weight-bold-italic {
+  font-weight: $font-weight-bold;
+  font-style: italic;
+};
+@mixin font-weight-extrabold-italic {
+  font-weight: $font-weight-extrabold;
+  font-style: italic;
+};
+/**
+ *
+ *   Keyframes
+ *     1. Create mixins for keyframes
+ *     2. Create mixins for animations
+ *
+ **/
+@mixin keyframes($animationName) {
+   @-webkit-keyframes #{$animationName}{
+    @content;
+  }
+  @-moz-keyframes #{$animationName} {
+     @content;
+  }
+  @-o-keyframes #{$animationName} {
+     @content;
+  }
+  @keyframes #{$animationName} {
+     @content;
+  }
+}
+@mixin animation($animate...) {
+  $max: length($animate);
+  $animations: '';
+  @for $i from 1 through $max {
+    $animations: #{$animations + nth($animate, $i)};
+    @if $i < $max {
+      $animations: #{$animations + ", "};
+    }
+  }
+  -webkit-animation: $animations;
+  -moz-animation: $animations;
+  -o-animation: $animations;
+  animation: $animations;
+}
+
+@mixin hoverLogo(){
+  z-index: 2;
+  -webkit-transition: all 200ms ease-in;
+  -webkit-transform: scale(1.5);
+  -ms-transition: all 200ms ease-in;
+  -ms-transform: scale(1.5);   
+  -moz-transition: all 200ms ease-in;
+  -moz-transform: scale(1.5);
+  transition: all 200ms ease-in;
+  transform: scale(1.5);            
+}

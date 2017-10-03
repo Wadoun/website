@@ -1,0 +1,269 @@
+.box {
+  width: 200px;
+  height: 50px;
+  bottom: 20px;
+  right:20px;
+  z-index: 5000000;
+  position: absolute;
+  display: inline-block;
+  margin: 0 10px;
+  cursor: pointer;
+  animation-delay: 2s;
+  color: #2c3e50;
+  box-shadow: inset 0 0 0 3px #2c3e50;
+  -webkit-transition: background 0.4s 0.5s;
+  transition: background 0.4s 0.5s;
+  &.blue {
+    background: $mosque;
+    svg {
+      line {
+        stroke: $white;
+      }
+    }
+    .button{
+      color: $white;
+    }
+  }
+  &.beige {
+    background: #d6d3b0;
+    &:hover{
+      svg {
+        line {
+          stroke: $mosque;
+        }
+      }     
+    }
+    svg {
+      line {
+        stroke: $white;
+      }
+    }
+    .button{
+      color: $white;
+      &:hover{
+        color:$mosque;
+      }
+    }
+  }  
+  &.caci {
+    background: #0f7986;
+    svg {
+      line {
+        stroke: $white;
+      }
+    }
+    .button{
+      color: $white;
+    }
+  }    
+  .button {
+    font: {
+      family: $font-family-title;
+      size: 32px;
+      weight: $font-weight-light;
+    }
+    cursor: pointer;
+    color: $mosque;
+    text-transform: uppercase;       
+    position: relative;
+    padding: 10px 50px 10px 35px;
+    display: block;
+    &:after{
+      background: url("/images/plus.png") no-repeat 98% 50%;
+      content:'';
+      position: absolute;
+      right: 16px;
+      top: 11px;
+      width: 31px;
+      height: 31px;     
+    }
+    &:hover{
+      &:after {
+        animation: 1s rotate forwards; 
+      }
+    }
+  }   
+
+}
+
+.box:hover { 
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.box svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.box svg line {
+  stroke-width: 1;
+  stroke: #046576;
+  fill: none;
+  -webkit-transition: all .8s ease-in-out;
+  transition: all .8s ease-in-out;
+
+}
+
+.box:hover svg line {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+
+.box svg line.top,
+.box svg line.bottom {
+    stroke-dasharray: 63 28;
+}
+
+.box svg line.left,
+.box svg line.right {
+  stroke-dasharray: 129 22;
+}
+
+.box:hover svg line.top {
+  -webkit-transform: translateX(-600px);
+  transform: translateX(-600px);
+}
+
+.box:hover svg line.bottom {
+  -webkit-transform: translateX(600px);
+  transform: translateX(600px);
+}
+
+.box:hover svg line.left {
+  -webkit-transform: translateY(920px);
+  transform: translateY(920px);
+}
+
+.box:hover svg line.right {
+  -webkit-transform: translateY(-920px);
+  transform: translateY(-920px);
+}
+
+/* Frame */
+.box {
+  color: $white;
+  box-shadow: none;
+  background: $white;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+}
+
+.box svg line {
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.box:hover svg line {
+  stroke-width: 1;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+.box:hover svg line.top {
+  -webkit-transform: translateX(-300px);
+  transform: translateX(-300px);
+}
+
+.box:hover svg line.bottom {
+  -webkit-transform: translateX(300px);
+  transform: translateX(300px);
+}
+
+.box:hover svg line.left {
+  -webkit-transform: translateY(460px);
+  transform: translateY(460px);
+}
+
+.box:hover svg line.right {
+  -webkit-transform: translateY(-460px);
+  transform: translateY(-460px);
+} 
+
+
+.soc {
+  display: block;
+  font-size: 0;
+  width: 100%;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  li {
+    display: inline-block;
+    margin: 12px;
+    margin: 1.2rem;
+  }  
+  a, svg {
+    display: block;
+  }
+  a {
+    position: relative;
+    height: 45px; 
+    height: 4.5rem;
+    width: 45px; 
+    width: 4.5rem;
+
+  }
+  svg {
+    height: 100%;
+    width: 100%;
+  }
+  
+  em {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: -.75em;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+}
+%social-icon-hover {
+  border-radius: 100%;
+  color:  hsl(214, 211, 176);
+  fill:  hsl(214, 211, 176);
+  transform: scale(1.25);
+  transition: background-color .5s, transform .5s ease-out;
+}
+
+@for $i from 1 through 30 {
+  .icon-#{$i} {
+    color: hsl($i * 214, 211, 176);
+    fill: hsl($i * 214, 211, 176);
+    &:hover {
+      background: hsl($i * 214, 211, 176);
+      @extend %social-icon-hover;
+    }
+  }
+}    
+
+.links-top {
+  li {
+    a {
+      font-family: "Oswald",sans-serif;
+      font-size: 36px;
+      font-weight: 300;
+      color: #fff;
+      text-transform: uppercase;
+      margin: 43px 0;
+    }
+  }
+}
+
+
+.links-bottom {
+  li {
+    display: inline-block;
+    a {
+      font-family: "Oswald",sans-serif;
+      font-size: 18px;
+      font-weight: 300;
+      color: #fff;      
+      margin: 43px 0;
+    }
+  }
+}

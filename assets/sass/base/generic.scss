@@ -1,0 +1,120 @@
+body {
+  width: 100%; 
+  color: $grey;
+  font-family: $ff;
+}
+a{
+	cursor: pointer;
+}
+.titleW{
+	font-size: $ftitle;	
+	font-family: $ff;	
+	text-transform: uppercase;
+	color:$white;
+}
+.block {
+	display: block;
+	text-align: center;
+}
+.titleG{
+	font-size: $ftitle;	
+	text-transform: uppercase;
+	font-family: $ff;
+	color:$grey;
+}
+.subtitleW{
+	font-size: $fsubtitle;	
+	font-family: $ff;
+	color: $white;
+}
+
+.subtitleG{
+	font-size: $fsubtitle;	
+	font-family: $ff;
+	color: $grey;
+}
+.buttonW {
+	font-size: $fbutton;
+	background: transparent;
+	border: 2px solid $white;	
+	font-weight: normal;
+	color: $white;
+	padding: 20px;	
+	border-radius: 50px;
+	display: inline-block;
+	text-align: center;
+	-webkit-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    transition: all .3s ease;
+
+	&:hover{
+		background: $white;		
+		color: $grey;
+		-webkit-transition: all .3s ease;
+        -ms-transition: all .3s ease;
+        transition: all .3s ease;
+	}
+}
+.buttonB {
+	font-size: $fbutton;
+	background: transparent;
+	border: 2px solid $blue;	
+	font-weight: normal;
+	color: $blue;
+	padding: 20px;	
+	border-radius: 50px;
+	display: inline-block;
+	text-align: center;
+	-webkit-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    transition: all .3s ease;
+
+	&:hover{
+		background: $blue;		
+		color: $white;
+		-webkit-transition: all .3s ease;
+        -ms-transition: all .3s ease;
+        transition: all .3s ease;
+	}
+}
+.input {
+	background: $white;
+	height: 55px;
+	border-radius: 50px;
+	width: 100%;	
+	border: none;
+	padding: 10px 20px;
+}
+.ok {
+	background: $blue;
+	height: 55px;
+	font-family: $ffb;
+	border-radius: 55px;
+	border:none;
+	color:$white;
+
+	&:hover{
+		color: $blue;
+		background: $white;
+		border:1px solid $blue;
+	}
+}
+@media #{$phone} { 
+	.titleW{
+		font-size: $ftitleM;
+		color:$white;
+	}
+	.titleG{
+		font-size: $ftitleM;
+		color:$grey;
+	}
+	.subtitleW{
+		font-size: $fsubtitleM;
+		color: $white;
+	}
+
+	.subtitleG{
+		font-size: $fsubtitleM;
+		color: $grey;
+	}
+}

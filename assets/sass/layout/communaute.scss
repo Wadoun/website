@@ -1,0 +1,100 @@
+.intro-comm {
+	display: block;
+	width: 100%;
+	.intro-comm-img{
+		width: 47%;
+		vertical-align: middle;		
+		display: inline-block;
+		@media #{$phone} {
+			width: 100%;
+			display: block;
+		}
+		img {
+			width: 100%;
+		}
+	}
+	.intro-comm-text {
+		width: 48%;
+	    vertical-align: middle;
+	    display: inline-block;
+	    padding: 2%;
+		@media #{$phone} {
+			width: 100%;
+			display: block;
+		}
+	    .titleG{
+	    	margin: 2% 0;
+	    	@media #{$phone} {
+	    		margin: 10% 0;
+	    	}
+	    }
+	}
+}	
+.entreprises-comm{
+	display: block;
+	width: 100%;
+	text-align: center;
+	margin: 2% 0;
+    .titleG{
+    	margin: 5% 0;
+    }
+	.swiper-slide {
+		width: 12%;
+		height: 100px;
+		margin: 0 2%;
+		text-align: center;
+
+		 @media #{$phone} {
+		 	width: 100%;
+		 	height: 150px;
+		 }
+		img {
+			width: 90%;
+			display: inline-block;
+			vertical-align: middle;
+			 @media #{$phone} {
+			 	width: 50%;
+			 	margin: 0 auto;
+			 }
+		}
+	}
+} 
+.press {
+	display: block;
+	width: 100%;
+	text-align: center;	
+	background: $greylight;
+    .titleG{
+    	margin: 5% 0;
+    }	
+    .press-global {
+	    width: 44%;
+	    display: inline-block;
+	    vertical-align: top;
+	    padding: 0 2%;
+    	.avatar {
+    		witdth: 100%;
+    		display: block;
+    		.avatar-img {
+    			width: 20%;
+    			display: inline-block;
+    			vertical-align: top;
+    		}
+    		.avatar-text{    			
+    			font-size: 12px;
+    			display: inline-block;
+    			vertical-align: top;
+    			span {
+    				display: block; 
+    			}
+    			.avatar-kob {
+    				font-family: $ffb;
+    			}
+    		}
+    	}
+    	.avatar-p {
+    		width: 100%;
+    		display: block;
+    	}
+    }
+}

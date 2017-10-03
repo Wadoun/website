@@ -1,0 +1,83 @@
+.hero {
+  .hero-logo {
+    height: 332px;
+    width: 332px;
+    position: relative;
+    top: 18px;
+    right: -60px;
+    display: inline-block;
+    float: right;
+    vertical-align: middle;
+
+    .hero-animation {
+      position: relative;
+      top: 40px;
+
+      .triangle {
+        position: absolute;
+        border: 0 solid transparent;
+        border-right-width: 15px;
+        border-left-width: 15px;
+        cursor: pointer;
+        &:hover{
+          @include hoverLogo;
+        }
+        &.triangle-h-a {
+          border-bottom: 30px solid $mosque;
+        }
+
+        &.triangle-h-b {
+          border-bottom: 30px solid $elm;
+        }
+
+        &.triangle-h-c {
+          border-bottom: 30px solid $envy;
+        }
+
+        &.triangle-h-d {
+          border-bottom: 30px solid $green-mist;
+        }
+
+        &.triangle-b-a {
+          border-top: 30px solid $mosque;
+        }
+
+        &.triangle-b-b {
+          border-top: 30px solid $elm;
+        }
+
+        &.triangle-b-c {
+          border-top: 30px solid $envy;
+        }
+
+        &.triangle-b-d {
+          border-top: 30px solid $green-mist;
+        }
+
+      }
+    }
+  }
+
+  .hero-lines {
+    display: block;
+    position: absolute;
+  }
+
+  .hero-text {
+    font: {
+      family: $font-family-title;
+      size: 72px;
+      weight: $font-weight-light;
+    }
+    color: $mosque;
+    line-height: normal;
+    margin: 0 50px;
+    text-transform: uppercase;
+
+    span {
+      padding: 10px;
+      color: $white;
+      background: $mosque;
+    }
+  }
+}

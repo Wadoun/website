@@ -1,0 +1,172 @@
+/**
+ *
+ *   Keyframes
+ *     1. Create keyframes library
+ *
+ **/
+@include keyframes(fade-in) {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+};
+@include keyframes(fade-out) {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+};
+@include keyframes(fade-in-hero-logo) {
+  0% {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+};
+@include keyframes(fade-in-right) {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+};
+@include keyframes(fade-in-left) {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+};
+@include keyframes(animation-line-left) {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 700px;
+  }
+};
+@include keyframes(animation-line-bottom-350) {
+  0% {
+    height: 0;
+  }
+
+  100% {
+    height: 500px;
+  }
+};
+@include keyframes(animation-line-bottom-500) {
+  0% {
+    height: 0;
+  }
+
+  100% {
+    height: 350px;
+  }
+};
+@include keyframes(bounce) {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-30px);
+  }
+
+  60% {
+    transform: translateY(-15px);
+  }
+};
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes move-line-one {
+  0% {
+    right: 0px;
+  }
+
+  100% {
+    right: -350px;
+  }
+}
+@keyframes move-line-two {
+  0% {
+    right: -625px;
+  }
+
+  100% {
+    right: 149px;
+  }
+}
+@keyframes move-line-three {
+  0% {
+    right: 350px;
+  }
+
+  100% {
+    right: -350px;
+  }
+}
+@keyframes move-line-four {
+  0% {
+    right: -578px;
+  }
+
+  100% {
+    right: 303px;
+  }
+}
+@keyframes move-line-five {
+  0% {
+    bottom: 5000px;
+  }
+
+  100% {
+    bottom: -500px;
+  }
+}
+@keyframes move-line-six {
+  0% {
+    top: 0;
+  }
+
+  100% {
+    top: -45px;
+  }
+}
+@keyframes move-line-seven {
+  0% {
+    bottom: 0;
+  }
+
+  100% {
+    bottom: -43px;
+  }
+}

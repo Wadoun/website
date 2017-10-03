@@ -1,0 +1,57 @@
+<div class="intro-comm">
+	<div class="intro-comm-img">
+		 <img src="/images/intro-comm.png" alt="Faites partie de la communauté WORKLIFT" />
+	</div>
+	<div class="intro-comm-text">
+		<h1 class="titleG">Faites partie de la communauté WORKLIFT</h1>
+		<p class="subtitleG">
+			Un réseau international sur lequel vous appuyer: rencontrez et échangez avec des entrepreneurs et entreprises partageant la même vision, que ce soit aux conférences organisées, événements de networking, ou dans les bureaux même de Work-lift et retrouvez-les depuis l’annuaire de votre accès membre.
+		</p>
+	</div>
+</div>
+<div class="entreprises-comm swiper-container">
+	<h2 class="titleG">Entreprise présentes chez worklift</h2>
+	<div class="swiper-wrapper">
+		<div class="swiper-slide"><img src="/images/entreprise-a.png" alt="Beepings" /></div>
+		<div class="swiper-slide"><img src="/images/entreprise-b.png" alt="Capture-lab" /></div>
+		<div class="swiper-slide"><img src="/images/entreprise-c.jpg" alt="Hello my Dj" /></div>
+		<div class="swiper-slide"><img src="/images/entreprise-d.jpg" alt="Ubimmo" /></div>
+		<div class="swiper-slide"><img src="/images/entreprise-e.jpg" alt="Paris shopping tour" /></div>
+		<div class="swiper-slide"><img src="/images/entreprise-f.jpg" alt="Echo conseil" /></div>	
+	</div>
+</div>
+
+<script>
+    var mySwiper = undefined;
+    function swiperMobil () {
+        
+        var screenWidth = $(window).width();
+
+        if(screenWidth < 768 && mySwiper == undefined) {   
+            $('.swiper-container').each(function(){
+                mySwiper = new Swiper(this, {            
+                    scrollbar: $(this).find('.swiper-scrollbar')[0],
+                    slidesPerView: 'auto',            
+                    effect: 'slide',                    
+                    spaceBetween: 0,
+                    loop: true
+                })
+            });        
+        }
+        else if ( screenWidth > 768 && mySwiper != undefined){
+            $('.swiper-container').each(function(){
+                mySwiper.destroy();
+                mySwiper = undefined;
+                console.log("destroy");
+                $('.swiper-wrapper').removeAttr('style');
+                $('.swiper-slide').removeAttr('style');     
+            });
+        }
+
+    }
+    swiperMobil();
+    $(window).on('resize', function(){
+        swiperMobil();
+  });
+
+</script>

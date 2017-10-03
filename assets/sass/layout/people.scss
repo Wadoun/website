@@ -1,0 +1,111 @@
+.people {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  cursor: pointer;
+  .people-photo {
+    width: 184px;
+    height: 232px;
+    position: relative;
+
+    .people-photo-cover {
+      width: 90%;
+      height: 90%;
+      position: absolute;
+      right: 0;
+      top: 0;
+      border: 1px solid $white;
+    }
+
+    .people-photo-img {
+      width: 90%;
+      height: 90%;
+      background-image: url('/images/user.png');
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      position: absolute;
+      bottom: 0;
+      border: 1px solid $white;
+      @keyframes move {
+        from {
+          opacity: 0;
+        }
+
+        to {
+          opacity: 1;
+          top: 0;
+          right: 0;
+        }
+      }
+
+      &:hover {
+        animation-name: move;
+        animation-duration: 0.8s;
+        animation-timing-function: ease-in-out;
+        background-image: url('/images/user-2.png');
+        top: 0;
+        right: 0;
+      }
+    }
+  }
+
+  .people-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 270px;
+    padding: 0 0 0 15px;
+
+    .people-content-name {
+      font: {
+        family: $font-family-title;
+        size: 24px;
+        weight: $font-weight-light;
+      }
+      color: $white;
+      margin: 0 0 8px;
+    }
+
+    .people-content-role {
+      font: {
+        family: $font-family-title;
+        size: 18px;
+        weight: $font-weight-semibold;
+      }
+      color: $mosque;
+      margin: 0 0 15px;
+    }
+
+    .people-content-description {
+      font: {
+        family: $font-family-title;
+        size: 17px;
+        weight: $font-weight-light;
+      }
+      color: $white;
+      margin: 0 0 15px;
+    }
+
+    .people-content-motto {
+      font: {
+        family: $font-family-title;
+        size: 16px;
+        weight: $font-weight-light;
+      }
+      color: $mosque;
+
+      &:after,
+      &:before {
+        content: '';
+      }
+
+      &:after {
+        content: '»';
+      }
+
+      &:before {
+        content: '«';
+      }
+    }
+  }
+}
